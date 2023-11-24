@@ -1,0 +1,200 @@
+body {
+  background-image: url('https://static2.bigstockphoto.com/2/0/2/large1500/202383154.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  color: #696911;
+  text-align: center;
+  font-size: larger;
+  padding: 20px;
+  border-radius: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.content {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 30px;
+}
+
+/* Styles for the header */
+header {
+  background-color: #e8a92a;
+  color: #fff;
+  padding: 5px 0;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #5f3535;
+  color: #fff;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Basic styles for the banner */
+.banner {
+  background: #5f3535;
+  color: #fff;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.banner h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+h1 {
+  color: #e8a92a;
+}
+
+.banner p {
+  font-size: 18px;
+}
+
+/* Styles for the footer */
+footer {
+  background-color: #e8a92a;
+  color: #fff;
+  padding: 5px 0;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.contact-info p {
+  font-size: 16px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    text-align: center;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #5f3535;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+/* General form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  padding: 20px;
+  background-color: rgb(231, 209, 209);
+  border-radius: 8px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  margin-bottom: 20px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: both;
+}
+
+button[type="submit"] {
+  background-color: #99db56;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #42b300;
+}
+
+/* Popup dialog styles */
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+dialog button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: #888;
+}
+
+dialog button:hover {
+  color: #574d4d;
+}
+
+.button-submit,
+.button-close {
+  position: relative;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.my-component .coral-Dialog-toolbar {
+  white-space: nowrap;
+}
+
+.my-component {
+  padding: 10px;
+}
